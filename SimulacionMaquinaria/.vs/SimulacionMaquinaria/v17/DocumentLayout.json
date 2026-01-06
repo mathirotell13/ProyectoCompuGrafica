@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\guill\\OneDrive\\Documentos\\GitHub\\ProyectoCompuGrafica\\SimulacionMaquinaria\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7ABDAB15-B47C-4451-816B-C5C8A21D05CD}|SimulacionMaquinaria\\SimulacionMaquinaria.vcxproj|C:\\Users\\guill\\OneDrive\\Documentos\\GitHub\\ProyectoCompuGrafica\\SimulacionMaquinaria\\SimulacionMaquinaria\\Persona.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7ABDAB15-B47C-4451-816B-C5C8A21D05CD}|SimulacionMaquinaria\\SimulacionMaquinaria.vcxproj|solutionrelative:SimulacionMaquinaria\\Persona.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ABDAB15-B47C-4451-816B-C5C8A21D05CD}|SimulacionMaquinaria\\SimulacionMaquinaria.vcxproj|C:\\Users\\guill\\OneDrive\\Documentos\\GitHub\\ProyectoCompuGrafica\\SimulacionMaquinaria\\SimulacionMaquinaria\\Clases\\Persona.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7ABDAB15-B47C-4451-816B-C5C8A21D05CD}|SimulacionMaquinaria\\SimulacionMaquinaria.vcxproj|solutionrelative:SimulacionMaquinaria\\Clases\\Persona.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7ABDAB15-B47C-4451-816B-C5C8A21D05CD}|SimulacionMaquinaria\\SimulacionMaquinaria.vcxproj|C:\\Users\\guill\\OneDrive\\Documentos\\GitHub\\ProyectoCompuGrafica\\SimulacionMaquinaria\\SimulacionMaquinaria\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7ABDAB15-B47C-4451-816B-C5C8A21D05CD}|SimulacionMaquinaria\\SimulacionMaquinaria.vcxproj|solutionrelative:SimulacionMaquinaria\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,6 +27,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Persona.cpp",
+              "DocumentMoniker": "C:\\Users\\guill\\OneDrive\\Documentos\\GitHub\\ProyectoCompuGrafica\\SimulacionMaquinaria\\SimulacionMaquinaria\\Persona.cpp",
+              "RelativeDocumentMoniker": "SimulacionMaquinaria\\Persona.cpp",
+              "ToolTip": "C:\\Users\\guill\\OneDrive\\Documentos\\GitHub\\ProyectoCompuGrafica\\SimulacionMaquinaria\\SimulacionMaquinaria\\Persona.cpp",
+              "RelativeToolTip": "SimulacionMaquinaria\\Persona.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-06T17:33:00.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Persona.h",
+              "DocumentMoniker": "C:\\Users\\guill\\OneDrive\\Documentos\\GitHub\\ProyectoCompuGrafica\\SimulacionMaquinaria\\SimulacionMaquinaria\\Clases\\Persona.h",
+              "RelativeDocumentMoniker": "SimulacionMaquinaria\\Clases\\Persona.h",
+              "ToolTip": "C:\\Users\\guill\\OneDrive\\Documentos\\GitHub\\ProyectoCompuGrafica\\SimulacionMaquinaria\\SimulacionMaquinaria\\Clases\\Persona.h",
+              "RelativeToolTip": "SimulacionMaquinaria\\Clases\\Persona.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-06T17:32:56.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\guill\\OneDrive\\Documentos\\GitHub\\ProyectoCompuGrafica\\SimulacionMaquinaria\\SimulacionMaquinaria\\main.cpp",
               "RelativeDocumentMoniker": "SimulacionMaquinaria\\main.cpp",
