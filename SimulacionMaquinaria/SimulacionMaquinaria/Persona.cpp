@@ -1,4 +1,4 @@
-#include "Persona.h"
+/*#include "Persona.h"
 
 Persona::Persona(const std::string & rutaOBJ)
 {
