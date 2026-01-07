@@ -1,4 +1,4 @@
-#include <GL/freeglut.h>
+#include "C:/Users/LENOVO/Downloads/Proyecto/ProyectoCompuGrafica/SimulacionMaquinaria/Libraries/GL/freeglut.h"
 #include <iostream>
 #include <vector>
 #include <string>
@@ -8,6 +8,7 @@
 #include "stb_image.h"
 
 using namespace std;
+
 
 // Estructuras básicas para el cargador OBJ
 struct Vertice { float x, y, z; };
@@ -61,6 +62,10 @@ GLuint cargarTextura(const char* ruta) {
 Modelo cargarOBJ(string ruta) {
     Modelo mod;
     ifstream archivo(ruta);
+    if (!archivo.is_open()) {
+        cout << "ERROR Critico: No se pudo abrir " << ruta << endl;
+        return mod;
+    }
     string linea;
     while (getline(archivo, linea)) {
         stringstream ss(linea);
@@ -82,8 +87,10 @@ Modelo cargarOBJ(string ruta) {
             mod.caras.push_back(c);
         }
     }
+    cout << "Modelo " << ruta << " cargado con " << mod.vertices.size() << " vertices." << endl;
     return mod;
 }
+
 void dibujarEjes() {
     glDisable(GL_LIGHTING); // Desactivamos luces para ver los colores puros de las lineas
     glLineWidth(3.0f);      // Lineas gruesas para que se vean bien
@@ -105,8 +112,8 @@ void dibujarEjes() {
     glEnable(GL_LIGHTING); // Reactivamos luces para los modelos
     glLineWidth(1.0f);
 }
+
 void dibujarModelo(Modelo m, float r, float g, float b) {
-    glDisable(GL_LIGHTING); // Desactivamos luces para ver el color puro
     glColor3f(r, g, b);     // Aplicamos el color manual
 
     glBegin(GL_TRIANGLES);
@@ -129,9 +136,10 @@ void inicializar() {
     glEnable(GL_LIGHT0);
     glEnable(GL_COLOR_MATERIAL);
 
+
     // Cargar las piezas que modelaste en Blender
     // Asegúrate de que las rutas coincidan con tu carpeta modelos/
-    cabina = cargarOBJ("modelos/minicargador_cabina.obj");
+    cabina = cargarOBJ("C:/Users/LENOVO/Downloads/Proyecto/ProyectoCompuGrafica/SimulacionMaquinaria/modelos/minicargador_cabina.obj");
     brazoDer = cargarOBJ("modelos/minicargador_brazo_derecho.obj");
     brazoIzq = cargarOBJ("modelos/minicargador_brazo_izquierdo.obj");
     cuchara = cargarOBJ("modelos/minicargador_cuchara.obj");
@@ -145,26 +153,27 @@ void display() {
     glLoadIdentity();
 
     // Camara (Ajustada para ver un area grande)
-    gluLookAt(60.0, 40.0, 100.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+    gluLookAt(100.0, 40.0, 100.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
 
     dibujarEjes();
 
     // --- DIBUJAR PIEZAS DEL MINICARGADOR ---
     glPushMatrix();
     // TRUCO DE ESCALA: Si no lo ves, aumenta este numero (ej. 10.0 o 50.0)
-    glScalef(200.0f, 200.0f, 200.0f);
+    glScalef(0.5f, 0.5f, 0.5f);
 
     // Dibujamos cada pieza con los colores que tenias en Blender (manual)
     dibujarModelo(cabina, 0.9f, 0.7f, 0.0f);      // Amarillo Maquinaria
-    dibujarModelo(brazoDer, 0.2f, 0.2f, 0.2f);    // Gris Oscuro
-    dibujarModelo(brazoIzq, 0.2f, 0.2f, 0.2f);    // Gris Oscuro
-    dibujarModelo(cuchara, 0.4f, 0.4f, 0.4f);     // Gris Metalico
+    //dibujarModelo(brazoDer, 0.2f, 0.2f, 0.2f);    // Gris Oscuro
+    //dibujarModelo(brazoIzq, 0.2f, 0.2f, 0.2f);    // Gris Oscuro
+    //dibujarModelo(cuchara, 0.4f, 0.4f, 0.4f);     // Gris Metalico
 
     // Agrega aqui las demas piezas que subiste (llantas, pedales, etc.)..
     glPopMatrix();
 
     glutSwapBuffers();
 }
+
 void redimensionar(int w, int h) {
     glViewport(0, 0, w, h);
     glMatrixMode(GL_PROJECTION);

@@ -102,12 +102,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\guill\OneDrive\Documentos\GitHub\ProyectoCompuGrafica\SimulacionMaquinaria\Libraries\include;C:\Users\guill\OneDrive\Documentos\GitHub\ProyectoCompuGrafica\SimulacionMaquinaria\Libraries;C:\Users\guill\OneDrive\Documentos\GitHub\ProyectoCompuGrafica\SimulacionMaquinaria\Libraries\include\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\LENOVO\Downloads\Proyecto\ProyectoCompuGrafica\SimulacionMaquinaria\Libraries\include;C:\Users\LENOVO\Downloads\Proyecto\ProyectoCompuGrafica\SimulacionMaquinaria\Libraries\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\guill\OneDrive\Documentos\GitHub\ProyectoCompuGrafica\SimulacionMaquinaria\Libraries\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\LENOVO\Downloads\Proyecto\ProyectoCompuGrafica\SimulacionMaquinaria\Libraries\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -119,10 +119,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\LENOVO\Downloads\Proyecto\ProyectoCompuGrafica\SimulacionMaquinaria\Libraries\include;C:\Users\LENOVO\Downloads\Proyecto\ProyectoCompuGrafica\SimulacionMaquinaria\Libraries\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\LENOVO\Downloads\Proyecto\ProyectoCompuGrafica\SimulacionMaquinaria\Libraries\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies> freeglut.lib; opengl32.lib; glu32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
